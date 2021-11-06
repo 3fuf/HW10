@@ -17,13 +17,15 @@
 /*Cloud*/
 
 .cloud {
-  position: absolute;
+  position: relative;
+  top: 525px;
+  left: 350px;
 }
 
 .bottom-cloud {
-  position: relative;
-  top: 200px;
-  left: 500px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
   width: 175px;
   height: 67px;
   background-color: gray;
@@ -32,8 +34,8 @@
 
 .right-cloud {
   position: absolute;
-  top: 170px;
-  left: 600px;
+  top: 15px;
+  left: 90px;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -42,8 +44,8 @@
 
 .left-cloud {
   position: absolute;
-  top: 155px;
-  left: 530px;
+  top: 0px;
+  left: 20px;
   width: 95px;
   height: 95px;
   border-radius: 100%;
@@ -54,31 +56,57 @@
 
 .sun {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   background: yellow;
   border-radius: 50%;
-  }
+  top: 610px;
+  left: 615px;
+  transform: translateY(100%);
+  animation-name: sunset;
+  animation-timing-function: ease-in-out;
+  animation-duration: 18s;
+  animation-fill-mode: forwards;
+}
 
 /*Mountain*/
 
 .mountain {
   position: absolute;
-  top: 595px;
+  top: 600px;
   left: 50px;
   width: 0;
   height: 0;
   border-left: 300px solid transparent;
   border-right: 300px solid transparent;
   border-bottom: 300px solid #24375B;
-  }
+}
 
   .mountain.small {
     top: 670px;
-    left: 250px;
-  }
+    left: 315px;
+}
 
   .mountain.mountain-right {
-    top: 595;
-    left: 500;
+    top: 600px;
+    left: 520px;
+}
+
+  @keyframes sunset {
+    0% {
+      transform: translateY(100%);
+      background-color: orangered;
+    }
+    25% {
+      transform: translateY(-570%);
+      background-color: yellow;
+    }
+    50% {
+      transform: translateY(-570%);
+      background-color: yellow;
+    }
+    100% {
+      transform: translateY(100%);
+      background-color: orangered;
+    }
   }
