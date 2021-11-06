@@ -20,6 +20,10 @@
   position: relative;
   top: 525px;
   left: 350px;
+  transform: translateX(71%);
+  animation-name: first-cloud;
+  animation-timing-function: ease-in-out;
+  animation-duration: 18s;
 }
 
 .bottom-cloud {
@@ -80,6 +84,7 @@
   border-left: 300px solid transparent;
   border-right: 300px solid transparent;
   border-bottom: 300px solid #24375B;
+
 }
 
   .mountain.small {
@@ -105,8 +110,25 @@
       transform: translateY(-570%);
       background-color: yellow;
     }
-    100% {
-      transform: translateY(100%);
+    75% {
+      transform: translateY(50%);
       background-color: orangered;
     }
+    100% {
+      transform: translateY(100%);
+      background-color: transparent;
+    }
+  }
+
+  @keyframes first-cloud {
+    0% {
+      transform: translateX(71%);
+    }
+    25% {
+      transform: translateX(-45%);
+    }
+    50% {
+      transform: translateX(-45%);
+    }
+
   }
