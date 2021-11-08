@@ -30,13 +30,9 @@ body {
   animation-name: first-cloud;
   animation-timing-function: ease-in-out;
   animation-duration: 15s;
-  padding-top: 9%;
 }
 
 .bottom-cloud {
-  position: absolute;
-  top: 35%;
-  left: 0px;
   width: 100%;
   padding-top: 39%;
   background-color: gray;
@@ -45,8 +41,8 @@ body {
 
 .right-cloud {
   position: absolute;
-  top: 12%;
-  left: 53%;
+  bottom: 66%;
+  left: 57%;
   width: 28%;
   padding-top: 28%;
   border-radius: 100%;
@@ -55,7 +51,7 @@ body {
 
 .left-cloud {
   position: absolute;
-  top: 0%;
+  bottom: 34%;
   left: 11%;
   width: 55%;
   padding-top: 50%;
@@ -68,9 +64,14 @@ body {
 }
 
 .cloud.cloud-small-first {
+  animation-duration: 8s;
   width: 120px;
-  animation-duration: 10s;
 }
+
+.cloud.cloud-small-first.cloud-small-second {
+  animation-duration: 12s;
+}
+
 
 /*Sun*/
 
