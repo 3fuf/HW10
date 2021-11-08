@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  animation-iteration-count: infinite;
+}
+
 .main {
   position: relative;
   display: block;
@@ -63,8 +68,7 @@
 }
 
 .cloud.cloud-small-first {
-  height: -50%;
-  width: -50%;
+  transform: scale(0.5);
   animation-duration: 10s;
 }
 
