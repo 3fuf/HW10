@@ -28,6 +28,7 @@ body {
   width: 175px;
   transform: translateX(485%);
   animation-name: first-cloud;
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-duration: 15s;
 }
@@ -85,6 +86,7 @@ body {
   left: 615px;
   transform: translateY(100%);
   animation-name: sunset;
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-duration: 18s;
   animation-fill-mode: forwards;
