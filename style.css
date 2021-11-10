@@ -31,6 +31,7 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-duration: 15s;
+  z-index: 2;
 }
 
 .bottom-cloud {
@@ -91,6 +92,7 @@ body {
   animation-duration: 18s;
   animation-fill-mode: forwards;
   animation-delay: -500ms;
+  z-index: 1;
 }
 
 /*Mountain*/
@@ -104,7 +106,7 @@ body {
   border-left: 300px solid transparent;
   border-right: 300px solid transparent;
   border-bottom: 300px solid #24375B;
-  z-index: 1;
+  z-index: 3;
 
 }
 
